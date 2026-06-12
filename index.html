@@ -758,6 +758,28 @@
           <article><h3>OCR</h3><p>Reconocimiento de texto en imagen. Permite buscar y copiar información de PDFs escaneados.</p></article>
         </div>
       </section>
+
+      <section class="section tinted" id="consultas">
+        <div class="section-heading">
+          <p class="eyebrow">Consultas</p>
+          <h2>Enviar una consulta</h2>
+          <p>Este formulario permite enviar comentarios o preguntas sobre la información publicada en esta página.</p>
+        </div>
+        <form class="contact-box" action="https://formsubmit.co/mariano.pereyra.1990.1@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Consulta desde sitio El Medanito" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off" />
+          <label>
+            Nombre
+            <input type="text" name="nombre" autocomplete="name" required />
+          </label>
+          <label>
+            Consulta
+            <textarea name="consulta" rows="4" required></textarea>
+          </label>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
     </main>
 
     <footer class="footer">

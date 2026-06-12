@@ -530,6 +530,57 @@ tbody tr:last-child td {
   font-weight: 720;
 }
 
+.contact-box {
+  display: grid;
+  gap: 14px;
+  max-width: 620px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 22px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.contact-box label {
+  display: grid;
+  gap: 6px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  background: var(--white);
+  color: var(--ink);
+  font: inherit;
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus {
+  border-color: var(--accent);
+  outline: 3px solid var(--accent-soft);
+}
+
+.contact-box button {
+  justify-self: start;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 18px;
+  background: var(--accent);
+  color: var(--white);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 900;
+}
+
+.hidden-field {
+  display: none;
+}
+
 .volume-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
