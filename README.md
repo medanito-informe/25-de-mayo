@@ -16,4 +16,4 @@ Pagina estatica para publicar un resumen ciudadano del Informe Final Ambiental d
 - `styles.css`: estilos responsivos e impresion.
 - `script.js`: soporte progresivo para componentes interactivos si se agregan.
 
-La pagina evita nombres personales o politicos y se concentra en datos procesados del informe ambiental.
+La pagina se concentra en datos procesados del informe ambiental y mantiene redaccion neutral.
