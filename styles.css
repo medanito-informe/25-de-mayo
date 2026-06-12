@@ -186,6 +186,11 @@ h3 {
   border-block: 1px solid var(--line);
 }
 
+.section.compact-section {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
 .section-heading {
   max-width: 760px;
   margin-bottom: 28px;
@@ -532,40 +537,41 @@ tbody tr:last-child td {
 
 .contact-box {
   display: grid;
-  gap: 10px;
-  max-width: 560px;
+  gap: 8px;
+  max-width: 460px;
   border: 1px solid var(--line);
-  border-radius: 22px;
-  padding: 20px;
+  border-radius: 18px;
+  padding: 16px;
   background: var(--paper);
   box-shadow: var(--shadow-strong);
 }
 
 .contact-box label {
   display: grid;
-  gap: 5px;
+  gap: 4px;
   color: var(--ink);
   font-weight: 800;
 }
 
 .contact-box label span {
-  font-size: 0.95rem;
+  font-size: 0.86rem;
 }
 
 .contact-box input,
 .contact-box textarea {
   width: 100%;
   border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 10px 13px;
+  border-radius: 12px;
+  padding: 8px 11px;
   background: var(--white);
   color: var(--ink);
   font: inherit;
+  font-size: 0.92rem;
 }
 
 .contact-box textarea {
   resize: vertical;
-  min-height: 86px;
+  min-height: 68px;
 }
 
 .contact-box input::placeholder,
@@ -585,17 +591,18 @@ tbody tr:last-child td {
   gap: 14px;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .contact-actions button {
   border: 0;
   border-radius: 999px;
-  padding: 11px 17px;
+  padding: 9px 14px;
   background: var(--accent);
   color: var(--white);
   cursor: pointer;
   font: inherit;
+  font-size: 0.9rem;
   font-weight: 900;
 }
 
