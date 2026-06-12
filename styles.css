@@ -200,13 +200,15 @@ h3 {
 .stats-grid,
 .pending-grid,
 .glossary,
-.legal-grid {
+.legal-grid,
+.status-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
 }
 
 .summary-card,
+.status-card,
 .stat,
 .pending-grid article,
 .glossary article,
@@ -223,6 +225,35 @@ h3 {
 .summary-card {
   min-height: 220px;
   padding: 24px;
+}
+
+.status-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.status-card {
+  padding: 22px;
+}
+
+.status-card h3 {
+  margin-bottom: 10px;
+}
+
+.status-card p {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 720;
+}
+
+.status-card.confirmed {
+  border-color: rgba(27, 118, 109, 0.35);
+  background: #f1fbf8;
+}
+
+.status-card.pending {
+  border-color: rgba(154, 91, 19, 0.35);
+  background: #fff6e6;
 }
 
 .summary-card.strong {
@@ -550,6 +581,7 @@ tbody tr:last-child td {
   .stats-grid,
   .glossary,
   .legal-grid,
+  .status-grid,
   .document-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -580,6 +612,7 @@ tbody tr:last-child td {
   .pending-grid,
   .glossary,
   .legal-grid,
+  .status-grid,
   .document-list {
     grid-template-columns: 1fr;
   }
@@ -628,6 +661,7 @@ tbody tr:last-child td {
   }
 
   .summary-card,
+  .status-card,
   .stat,
   .volume-card,
   .pending-grid article,
